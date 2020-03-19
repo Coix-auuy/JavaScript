@@ -1,0 +1,6 @@
+1.javascript是弱类型的语言。
+    js的变量类型是有程序在运行过程中，根据等号右边的值来确定的。
+2.js是动态语言。 
+    变量的数据类型可以变化。
+3.简单数据类型
+    Number-0 Booean-false String-"" Undefined-Undefined NULL

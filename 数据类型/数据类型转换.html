@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 把数字型转换为字符串
+        //1.toString()
+        var num = 10;
+        var str = num.toString();
+        console.log(str);
+        console.log(typeof str);
+        //2.String()
+        console.log(typeof String(num));
+        //3.拼接(隐式转换)
+        console.log(typeof (num + ""));
+
+        //转换为数字型
+        //1.parseInt(string) 字符转换为整数.
+        str = '123';
+        console.log(typeof (parseInt(str)));
+        //2.parseFloat(string) 字符转换为浮点数
+        console.log(parseFloat('3.14'));
+        //3.Number()
+        str = '123';
+        console.log(Number(str));
+        //4.算数运算 - * /
+        console.log('12' - 0);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
