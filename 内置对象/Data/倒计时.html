@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //2019-10-1 8:8:8
+        var date = new Date('2020-3-22 22:30:0');
+        var a = date.valueOf() - Date.now();
+        a /= 1000;
+        console.log((Math.floor(a / 3600)) + ':' + (Math.floor(a % 3600 / 60)) + ":" + (Math.floor(a % 60)));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

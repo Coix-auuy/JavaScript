@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建对象</title>
+    <script>
+        //字面量创建对象{}
+        var obj = {
+            uname: '张三丰',
+            age: '18',
+            sex: '男',
+            say: function () {
+                console.log('hi~');
+            }
+        }
+        // (1).对象名.属性名
+        console.log(obj.uname);
+        // (2).对象名['属性名']
+        console.log(obj['age']);
+        //(3).对象名.方法名
+        obj.say();
+        console.log('--------------------------');
+        //new Object创建对象
+        var people = new Object();
+        //添加属性和方法
+        people.name = '张三丰';
+        people.age = 18;
+        people.sex = '男';
+        people.sayHi = function () {
+            console.log('gun');
+        }
+        people.sayHi();
+        console.log('--------------------------');
+        //构造函数创建对象  对象的实例化
+        //方便创建多个对象有点像java的类
+        function Star(uname, age, sex) {
+            this.uname = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function (sang) {
+                console.log(sang);
+            }
+        }
+        var ldh = new Star('刘德华', 18, '男');
+        //new 关键字的执行过程
+        /* 
+            1.在内存中创建一个空对象。
+            2.this指向刚才创建的空对象。
+            3.执行构造函数里面的代码，给这个对象添加属性和方法。
+            4.返回这个对象。
+        */
+        console.log(ldh.uname);
+        ldh.sing('给我一杯忘情水');
+        //1.构造函数首字母大写
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

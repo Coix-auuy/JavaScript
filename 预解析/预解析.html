@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1????
+        console.log(num);//坑1
+        var num = 10;
+
+
+        //2????
+        fn();
+        function fn() {
+            console.log(11);
+        }
+
+
+
+        // 3???? 坑2
+        fun();
+        // fun为变量
+        var fun = function () {
+            console.log(22);
+        }
+        // var fun;
+        // fun();
+        // fun = function() {
+        //     console.log(22);
+        // }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

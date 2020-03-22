@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        var b = getRandom(1, 100);
+        while (true) {
+            var a = parseInt(prompt());
+            if (a > b)
+                alert('大了');
+            else if (a < b)
+                alert('小了');
+            else {
+                alert('对了');
+                break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

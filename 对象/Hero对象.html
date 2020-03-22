@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var hero = function (hname, type, blood, attack) {
+            this.hname = hname;
+            this.type = type;
+            this.blood = blood;
+            this.attack = attack;
+            this.say = function (str) {
+                console.log(str);
+            }
+        }
+        var houyi = new hero('后裔', '射手', 100, '远程');
+        console.log(houyi['type']);
+        houyi.say('所有人都将臣服');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

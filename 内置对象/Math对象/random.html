@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random</title>
+    <script>
+        //1.返回一个随机的小数[0,1). 
+        //2.不跟参数
+        //3.代码验证
+        console.log(Math.random());
+        //两数之间的随机整数
+        function random(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        console.log(random(1, 5));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
